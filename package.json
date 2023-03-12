@@ -5,6 +5,13 @@
   "dependencies": {
     "truebase": "^9.0.0"
   },
+  "prettier": {
+    "useTabs": false,
+    "tabWidth": 2,
+    "semi": false,
+    "printWidth": 240,
+    "trailingComma": "none"
+  },
   "scripts": {
     "trueBaseBeta": "npm install ~/truebase"
   }
