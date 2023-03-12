@@ -1,0 +1,8 @@
+trueBaseId newtondb
+siteName newtondb
+siteDomain newtondb.truebase.pub
+grammarFolder ./grammar
+thingsFolder ./things
+ignoreFolder ./ignore
+siteFolder ./site
+devPort 5678

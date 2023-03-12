@@ -1,0 +1,31 @@
+stringCell
+intCell
+ highlightScope constant.numeric.integer
+keywordCell
+ highlightScope keyword
+trueBaseIdCell
+ description A global identifier for this entity in a TrueBase. Currently a very restricted character set to ensure compatibility between a wide variety of URLs and filesystems.
+ regex [a-z0-9-]+
+ highlightScope string
+newtondbNode
+ root
+ string tableName newtondb
+ string fileExtension newtondb
+ inScope abstractPropertyNode
+ catchAllNodeType errorNode
+errorNode
+ baseNodeType errorNode
+abstractPropertyNode
+ cruxFromId
+ single
+abstractStringPropertyNode
+ cells keywordCell
+ catchAllCellType stringCell
+ extends abstractPropertyNode
+abstractIntPropertyNode
+ cells keywordCell intCell
+ extends abstractPropertyNode
+titleNode
+ extends abstractStringPropertyNode
+diameterNode
+ extends abstractIntPropertyNode

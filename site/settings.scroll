@@ -1,0 +1,14 @@
+importOnly
+
+replaceDefault BASE_URL 
+replace SITE_NAME newtondb
+replace SITE_DESCRIPTION A truebase
+replace TRUEBASE_ID newtondb
+replace DOMAIN_NAME newtondb.truebase.pub
+replace GIT_URL https://github.com/breck7/truebase
+
+description SITE_NAME: SITE_DESCRIPTION
+git GIT_URL
+viewSourceBaseUrl https://github.com/breck7/truebase/blob/main/planetsDB/
+email feedback@DOMAIN_NAME
+baseUrl https://DOMAIN_NAME
