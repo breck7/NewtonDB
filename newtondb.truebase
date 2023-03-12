@@ -1,8 +1,8 @@
 trueBaseId newtondb
-siteName newtondb
-siteDomain newtondb.truebase.pub
+siteName NewtonDB
+siteDomain newtondb.com
 grammarFolder ./grammar
 thingsFolder ./things
 ignoreFolder ./ignore
 siteFolder ./site
-devPort 5678
+devPort 1921

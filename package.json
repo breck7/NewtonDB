@@ -4,5 +4,8 @@
   "description": "A database of physics experiments",
   "dependencies": {
     "truebase": "^9.0.0"
+  },
+  "scripts": {
+    "trueBaseBeta": "npm install ~/truebase"
   }
 }
