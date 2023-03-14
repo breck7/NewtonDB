@@ -13,6 +13,7 @@
     "trailingComma": "none"
   },
   "scripts": {
-    "trueBaseBeta": "npm install ~/truebase"
+    "trueBaseBeta": "npm install ~/truebase",
+    "launch": "git pull; npm install .; npm run restart"
   }
 }
