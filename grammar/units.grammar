@@ -1,0 +1,7 @@
+unitCell
+ enum second meter kilogram ampere kelvin mole candela
+ highlightScope constant.language
+unitNode
+ cells keywordCell unitCell
+ catchAllCellType unitCell
+ extends abstractPropertyNode

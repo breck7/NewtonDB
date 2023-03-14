@@ -1,11 +1,20 @@
 stringCell
+numericCell
+ highlightScope constant.numeric
+floatCell
+ extends numericCell
+ highlightScope constant.numeric
+urlCell
+ highlightScope constant.language
+ regex (ftp|https?)://.+
 intCell
+ extends numericCell
  highlightScope constant.numeric.integer
 keywordCell
  highlightScope keyword
 trueBaseIdCell
  description A global identifier for this entity in a TrueBase. Currently a very restricted character set to ensure compatibility between a wide variety of URLs and filesystems.
- regex [a-z0-9-]+
+ regex [a-zA-Z0-9-]+
  highlightScope string
 newtondbNode
  root
@@ -25,7 +34,13 @@ abstractStringPropertyNode
 abstractIntPropertyNode
  cells keywordCell intCell
  extends abstractPropertyNode
+abstractFloatPropertyNode
+ cells keywordCell floatCell
+ extends abstractPropertyNode
 titleNode
  extends abstractStringPropertyNode
 diameterNode
  extends abstractIntPropertyNode
+abstractUrlNode
+ cells keywordCell urlCell
+ extends abstractPropertyNode

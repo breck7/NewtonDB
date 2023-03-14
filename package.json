@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A database of physics experiments",
   "dependencies": {
-    "truebase": "^10.0.0"
+    "truebase": "^11.0.0"
   },
   "prettier": {
     "useTabs": false,
@@ -14,6 +14,9 @@
   },
   "scripts": {
     "trueBaseBeta": "npm install ~/truebase",
-    "launch": "git pull; npm install .; npm run restart"
+    "launch": "git pull; npm install .; npm run restart",
+    "test": "truebase test",
+    "local": "truebase start",
+    "restart": "pm2 restart 0"
   }
 }
