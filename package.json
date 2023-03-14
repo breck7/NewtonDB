@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A database of physics experiments",
   "dependencies": {
-    "truebase": "^9.0.2"
+    "truebase": "^10.0.0"
   },
   "prettier": {
     "useTabs": false,
