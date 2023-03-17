@@ -1,0 +1,7 @@
+title power radiant flux
+type unit
+description derived SI unit
+wikipedia https://en.wikipedia.org/wiki/Radiant_flux
+unit watt
+baseunit meter kilogram second
+symbol W

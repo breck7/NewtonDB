@@ -1,0 +1,7 @@
+title frequency
+type unit
+description derived SI unit
+wikipedia https://en.wikipedia.org/wiki/Frequency
+unit hertz
+baseunit second
+symbol Hz

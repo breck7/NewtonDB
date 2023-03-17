@@ -1,0 +1,7 @@
+title pressure stress
+type unit
+description derived SI unit
+wikipedia https://en.wikipedia.org/wiki/Pressure
+unit pascal
+baseunit meter kilogram second
+symbol Pa

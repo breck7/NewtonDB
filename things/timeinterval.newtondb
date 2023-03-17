@@ -1,0 +1,6 @@
+title time interval
+type unit
+description SI unit
+wikipedia https://en.wikipedia.org/wiki/Time_in_physics
+unit second
+symbol s

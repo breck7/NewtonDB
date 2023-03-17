@@ -1,0 +1,7 @@
+title magnetic flux
+type unit
+description derived SI unit
+wikipedia https://en.wikipedia.org/wiki/Magnetic_flux
+unit weber
+baseunit meter second kilogram ampere
+symbol Wb

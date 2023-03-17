@@ -1,0 +1,7 @@
+title electric conductance
+type unit
+description derived SI unit
+wikipedia https://en.wikipedia.org/wiki/Electrical_resistance_and_conductance
+unit siemens
+baseunit ampere meter kilogram second
+symbol S

@@ -1,5 +1,5 @@
 typeCell
- enum term constant experiment
+ enum unit term constant experiment
  highlightScope constant.language
 typeNode
  description What kind of thing is this entity?

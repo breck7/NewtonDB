@@ -1,0 +1,7 @@
+title radioactive activity 
+type unit
+description derived SI unit
+wikipedia https://en.wikipedia.org/wiki/Radioactive_decay
+unit becquerel
+baseunit second
+symbol Bq
