@@ -1,0 +1,7 @@
+title electric capacitance 
+type unit
+description derived SI unit
+wikipedia https://en.wikipedia.org/wiki/Capacitance
+unit farad
+baseunit ampere second meter kilogram
+symbol F

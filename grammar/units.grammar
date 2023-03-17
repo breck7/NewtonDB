@@ -1,5 +1,5 @@
 unitCell
- enum second meter kilogram ampere kelvin mole candela
+ enum second meter kilogram ampere kelvin mole candela katal farad coulomb siemens volt ohm joule newton hertz lux henry lumen weber tesla radian watt pascal gray sievert becquerel steradian degreeCelsius unitless
  highlightScope constant.language
 unitNode
  cells keywordCell unitCell

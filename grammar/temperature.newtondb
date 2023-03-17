@@ -1,0 +1,7 @@
+title temperature
+type unit
+description derived SI unit
+wikipedia https://en.wikipedia.org/wiki/Temperature
+unit degreeCelsius
+baseunit kelvin
+symbol ◦C

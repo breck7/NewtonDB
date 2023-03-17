@@ -1,0 +1,7 @@
+title magnetic flux density
+type unit
+description derived SI unit
+wikipedia https://en.wikipedia.org/wiki/Magnetic_field
+unit tesla
+baseunit meter second kilogram ampere
+symbol T

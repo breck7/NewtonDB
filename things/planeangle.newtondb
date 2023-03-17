@@ -1,0 +1,6 @@
+title plane angle
+type unit
+description derived SI unit
+unit radian unitless
+baseunit meter
+symbol rad

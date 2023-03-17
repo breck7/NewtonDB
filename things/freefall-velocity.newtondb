@@ -1,5 +1,5 @@
 title Freefall Velocity
-description Velocity of a falling object
+description Instantaneous velocity of a free falling object
 wikipedia https://en.wikipedia.org/wiki/Equations_for_a_falling_body
 type term
 unit meter second

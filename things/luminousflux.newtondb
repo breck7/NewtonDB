@@ -1,0 +1,7 @@
+title luminous flux
+type unit
+description derived SI unit
+wikipedia https://en.wikipedia.org/wiki/Luminous_flux
+unit lumen
+baseunit candela
+symbol lm
