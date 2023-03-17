@@ -20,7 +20,7 @@ newtondbNode
  root
  string tableName newtondb
  string fileExtension newtondb
- inScope abstractPropertyNode
+ inScope abstractPropertyNode blankLineNode
  catchAllNodeType errorNode
 errorNode
  baseNodeType errorNode
@@ -44,3 +44,12 @@ diameterNode
 abstractUrlNode
  cells keywordCell urlCell
  extends abstractPropertyNode
+blankCell
+blankLineNode
+ description Blank lines do nothing.
+ cells blankCell
+ compiler
+  stringTemplate 
+ pattern ^$
+ tags doNotSynthesize
+ boolean shouldSerialize false

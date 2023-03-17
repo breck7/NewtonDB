@@ -3,5 +3,5 @@ type unit
 description derived SI unit
 wikipedia https://en.wikipedia.org/wiki/Inductance
 unit henry
-baseunit ampere second meter kilogram  
+baseunit ampere second meter kilogram
 symbol H
