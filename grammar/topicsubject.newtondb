@@ -1,0 +1,13 @@
+subjectCell
+ enum dynamics definition constant acceleration reduced mass relativistic dynamics ballistics rocketry orbital motion galilean transformation lorentz transformation velocity transformation momentum and energy transformation propegation of light four vectors rotating frames newtonian gravity general relativity Rutherford scattering inelastic collisions elastic collisions moment of inertia principle axes center of mass pendulums tops and gyroscopes undamped oscillation damped oscillation Lagrangian dynamics Hamiltonian dynamics elasticity definitions isotropic elasitc solids torsion bending beams elastic wave velocities waves in strings and springs propegation of elstic waves ideal fluids potential flow laminar viscous flow drag characteristic numbers fluid waves doppler effect wave speeds shocks surface tension 
+ highlightScope constant.language
+topicCell
+ enum mechanics quantum thermodynamics solidstate electromagnetism optics astrophysics
+ highlightScope constant.language
+subjectNode
+ cells keywordCells
+ catchAllCellType subjectCell
+topicNode
+ cells keywordCell
+ catchAllCellType topicCell
+ extends abstractPropertyNode

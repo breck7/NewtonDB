@@ -1,0 +1,14 @@
+title relativistic kinetic energy
+description energy of a relativistic mass in motion
+wikipedia https://en.wikipedia.org/wiki/Kinetic_energy#Relativistic_kinetic_energy_of_rigid_bodies
+type equation
+unit joule
+baseunit kilogram meter second
+topic mechanics
+subject relativistic dynamics
+function Lorentz factor rest mass speed of light
+ * rest mass
+ *^2 speed of light
+ - 1 Lorentz factor
+
+ fina

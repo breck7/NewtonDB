@@ -1,0 +1,10 @@
+title relativistic force
+description force on a relativistic mass subject to relativistic acceleration
+wikipedia https://en.wikipedia.org/wiki/Force#Special_relativity
+type equation
+unit newton
+baseunit meter second kilogram
+topic mechanics
+subject relativistic dynamics
+function moment time
+ / der moment der time 

@@ -1,0 +1,7 @@
+title work
+type unit
+description derived SI unit
+wikipedia https://en.wikipedia.org/wiki/Work_(physics)#:~:text=In%20physics%2C%20work%20is%20the,strength%20and%20the%20distance%20traveled.
+unit joule
+baseunit meter kilogram second
+symbol J

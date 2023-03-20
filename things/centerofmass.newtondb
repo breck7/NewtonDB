@@ -1,0 +1,11 @@
+title center of mass
+description point where object can be balanced
+wikipedia https://en.wikipedia.org/wiki/Center_of_mass
+type equation
+unit meter
+baseunit meter
+topic mechanics
+subject dynamic definitions
+function mass position
+ / sum mass
+ * sum mass  particle position vector 

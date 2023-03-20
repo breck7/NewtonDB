@@ -1,0 +1,15 @@
+title lorentz factor
+description Relativistic factor that describes how much an object's mass, length, and time interval change at relativistic speeds.
+wikipedia https://en.wikipedia.org/wiki/Lorentz_factor
+type equation
+unit unitless
+baseunit unitless
+topic mechanics
+subject relativistic dynamics
+symbol
+function velocity speed of light
+ / 1 
+ sqrt 
+ - 1 
+ ^2 
+ / velocity speed of light
