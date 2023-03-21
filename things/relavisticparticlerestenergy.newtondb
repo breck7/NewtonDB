@@ -1,0 +1,11 @@
+title particle rest energy
+description energy equivalent of mass at rest
+wikipedia https://en.wikipedia.org/wiki/Rest_energy
+type equation
+unit joule
+baseunit kilogram meter second
+topic mechanics
+subject relativistic dynamics
+function rest mass speed of light
+ * rest mass
+ *^2 speed of light

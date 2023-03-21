@@ -1,0 +1,10 @@
+title momentum
+description Property of an object in motion that is conserved in all inertial reference frames in special relativity.
+wikipedia https://en.wikipedia.org/wiki/Four-momentum
+type equation
+unit kilogram meter second
+baseunit kilogram meter second
+topic mechanics
+subject relativistic dynamics
+function restmass velocity
+ * Lorentz factor rest mass velocity

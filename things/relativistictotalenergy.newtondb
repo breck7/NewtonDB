@@ -1,0 +1,13 @@
+title relativistic total energy
+description total energy of a relativistic mass, including its rest energy and kinetic energy
+wikipedia https://en.wikipedia.org/wiki/Total_energy#Special_relativity
+type equation
+unit joule
+baseunit kilogram meter second
+topic mechanics
+subject relativistic dynamics
+function Lorentz factor rest mass speed of light relativistic momentum
+ * sqrt
+ +
+ *^2^2 relativistic momentum speed of light 
+ *^2^4 rest mass speed of light

@@ -1,0 +1,10 @@
+title torque
+description force that causes rotation
+wikipedia https://en.wikipedia.org/wiki/Torque
+type equation
+unit newton meter
+baseunit meter kilogram second
+topic mechanics
+subject dynamic definitions
+function force particle position vector
+ * force particle position vector
