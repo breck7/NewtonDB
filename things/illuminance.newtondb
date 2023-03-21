@@ -3,5 +3,9 @@ type unit
 description derived SI unit
 wikipedia https://en.wikipedia.org/wiki/Illuminance
 unit lux
+<<<<<<< HEAD
 baseunit meter candela 
+=======
+baseunit meter candela
+>>>>>>> c70e424ac241c84537725b66b0050f3caf34f1bf
 symbol lx

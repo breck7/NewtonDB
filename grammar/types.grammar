@@ -1,5 +1,9 @@
 typeCell
+<<<<<<< HEAD
  enum unit term constant equation experiment
+=======
+ enum unit term constant experiment
+>>>>>>> c70e424ac241c84537725b66b0050f3caf34f1bf
  highlightScope constant.language
 typeNode
  description What kind of thing is this entity?
