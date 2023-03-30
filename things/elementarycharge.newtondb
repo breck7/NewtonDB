@@ -1,4 +1,5 @@
 title elementary charge
+type unit base exact interaction
 description charge of proton
 wikipedia https://en.wikipedia.org/wiki/Elementary_charge
 value 1.602176634×10^−19
