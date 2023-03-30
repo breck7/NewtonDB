@@ -7,5 +7,10 @@ baseunit meter
 topic mechanics
 subject dynamic definitions
 function mass position
- / sum mass
- * sum mass  particle position vector 
+ / 
+  sum 
+   mass
+ * 
+  sum 
+   mass
+   particle position vector 

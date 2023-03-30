@@ -6,5 +6,9 @@ unit newton
 baseunit meter second kilogram
 topic mechanics
 subject relativistic dynamics
-function moment time
- / der moment der time 
+function momentum time
+ / 
+  der 
+   momentum 
+  der 
+   time 

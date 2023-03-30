@@ -1,0 +1,3 @@
+valueNode
+ description The numeric value of a constant or term
+ extends abstractFloatPropertyNode

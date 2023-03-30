@@ -1,3 +1,0 @@
-valueNode
- description The value of a constant.
- extends abstractFloatPropertyNode

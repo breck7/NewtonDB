@@ -1,0 +1,5 @@
+title Boltzmann constant
+description a physical constant that relates the average kinetic energy of particles in a gas to the temperature of the gas.
+wikipedia https://en.wikipedia.org/wiki/Boltzmann_constant
+unit joule kelvin
+value 1.381 x 10^-23 

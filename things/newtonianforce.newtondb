@@ -7,4 +7,6 @@ baseunit meter second
 topic mechanics
  subject dynamic definitions
 function mass acceleration
- * mass acceleration
+ * 
+  mass 
+  acceleration

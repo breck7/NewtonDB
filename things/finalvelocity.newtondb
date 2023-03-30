@@ -11,5 +11,10 @@ function initial velocity acceleration time
  * acceleration time
 function displacement initial velocity acceleration
  sqrt
- +^2 initial velocity
- * 2 acceleration displacement
+  +
+   ^2 
+    initial velocity
+   * 
+    2 
+    acceleration 
+    displacement

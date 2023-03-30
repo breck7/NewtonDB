@@ -8,9 +8,21 @@ topic mechanics
  subject constant acceleration
 function initial velocity acceleration time
  + 
- * initial velocity time
- *^2 time acceleration 0.5
+  * 
+   initial velocity
+   time
+  *
+   ^2 
+    time 
+   *
+    acceleration
+    0.5
 
 function final velocity initial velocity time
- * time
- +- final velocity initial velocity 2
+ * 
+  time
+  /
+   - 
+    final velocity 
+    initial velocity
+   2

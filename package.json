@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A database of physics experiments",
   "dependencies": {
+    "katex": "^0.16.4",
     "truebase": "^11.0.0"
   },
   "prettier": {

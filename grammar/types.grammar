@@ -1,5 +1,5 @@
 typeCell
- enum unit term constant equation experiment
+ enum unit property equation experiment base exact approx object interaction term constant law derived underived scalar vector
  highlightScope constant.language
 typeNode
  description What kind of thing is this entity?

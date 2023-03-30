@@ -7,7 +7,15 @@ baseunit kilogram meter second
 topic mechanics
 subject relativistic dynamics
 function Lorentz factor rest mass speed of light relativistic momentum
- * sqrt
- +
- *^2^2 relativistic momentum speed of light 
- *^2^4 rest mass speed of light
+ sqrt
+  +
+   *
+    ^2
+     relativistic momentum
+    ^2 
+     speed of light 
+   *
+    ^2
+     rest mass
+    ^4
+     speed of light

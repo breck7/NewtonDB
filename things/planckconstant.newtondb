@@ -1,0 +1,5 @@
+title Planck constant
+description A fundamental physical constant that relates the energy of a photon to its frequency.
+wikipedia https://en.wikipedia.org/wiki/Planck_constant
+unit joule second
+value 6.626 x 10^-34

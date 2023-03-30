@@ -1,0 +1,13 @@
+title candela
+type unit base exact interaction
+description SI base unit defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 540 x 10^12 Hz to be 683 when expressed in the unit lm⋅W^-1, where the watt is defined in terms of the kilogram, meter, and second.
+wikipedia https://en.wikipedia.org/wiki/Candela
+symbol cd
+value 1
+function hyperfine transition frequency of Cs-133 Planck constant 683
+ /
+  1
+  *
+   683
+   hyperfine transition frequency of Cs-133
+   Planck constant
