@@ -1,7 +1,7 @@
 title relativistic total energy
+type equation
 description total energy of a relativistic mass, including its rest energy and kinetic energy
 wikipedia https://en.wikipedia.org/wiki/Total_energy#Special_relativity
-type equation
 unit joule
 baseunit kilogram meter second
 topic mechanics
