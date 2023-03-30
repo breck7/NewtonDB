@@ -5,7 +5,7 @@ wikipedia https://en.wikipedia.org/wiki/Total_energy#Special_relativity
 unit joule
 baseunit kilogram meter second
 topic mechanics
-subject relativistic dynamics
+subject relativisticDynamics
 function Lorentz factor rest mass speed of light relativistic momentum
  sqrt
   +

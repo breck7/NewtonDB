@@ -5,7 +5,7 @@ wikipedia https://en.wikipedia.org/wiki/Kinetic_energy#Relativistic_kinetic_ener
 unit joule
 baseunit kilogram meter second
 topic mechanics
-subject relativistic dynamics
+subject relativisticDynamics
 function Lorentz factor rest mass speed of light
  * 
   rest mass

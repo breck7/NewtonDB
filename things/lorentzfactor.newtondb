@@ -5,7 +5,7 @@ type equation
 unit unitless
 baseunit unitless
 topic mechanics
-subject relativistic dynamics
+subject relativisticDynamics
 symbol
 function velocity speed of light
  /

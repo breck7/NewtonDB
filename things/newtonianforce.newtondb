@@ -5,7 +5,7 @@ wikipedia https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion
 unit newton
 baseunit meter second
 topic mechanics
- subject dynamic definitions
+subject dynamicsDefinition
 function mass acceleration
  * 
   mass 
