@@ -1,0 +1,7 @@
+title Avogadro constant
+type unit base exact object
+description The Avogadro constant, represented by the symbol N_A, is the number of constituent particles, such as atoms, molecules, ions or electrons, in one mole of a substance. It is defined as exactly 6.02214 x 10^23 particles per mole.
+wikipedia https://en.wikipedia.org/wiki/Avogadro_constant
+symbol Na
+unit elementary entities
+value 6.02214 x 10^23

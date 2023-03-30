@@ -1,5 +1,5 @@
 operatorCell
- enum % * + - /
+ enum % * + - / ^ sqrt 
  highlightScope constant.language
  description The operators that connect the terms.
 termOrUnitCell

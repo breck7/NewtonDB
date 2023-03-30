@@ -5,7 +5,12 @@ type equation
 unit meter
 baseunit meter
 topic mechanics
-subject dynamic definitions
+subject dynamicsDefinition
 function mass position
- / sum mass
- * sum mass  particle position vector 
+ / 
+  sum 
+   mass
+ * 
+  sum 
+   mass
+   particle position vector 

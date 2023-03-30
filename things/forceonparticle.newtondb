@@ -5,6 +5,10 @@ type equation
 unit newton
 baseunit meter second kilogram
 topic mechanics
-subject relativistic dynamics
-function moment time
- / der moment der time 
+subject relativisticDynamics
+function momentum time
+ / 
+  der 
+   momentum 
+  der 
+   time 

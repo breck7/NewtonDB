@@ -1,10 +1,12 @@
 title Newtonian force
+type equation
 description force on mass subject to acceleration 
 wikipedia https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion
-type equation
 unit newton
 baseunit meter second
 topic mechanics
- subject dynamic definitions
+subject dynamicsDefinition
 function mass acceleration
- * mass acceleration
+ * 
+  mass 
+  acceleration

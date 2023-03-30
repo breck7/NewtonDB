@@ -5,11 +5,16 @@ type equation
 unit meter second
 baseunit meter second
 topic mechanics
- subject constant acceleration
+subject constantAcceleration
 function initial velocity acceleration time
  + initial velocity
  * acceleration time
 function displacement initial velocity acceleration
  sqrt
- +^2 initial velocity
- * 2 acceleration displacement
+  +
+   ^2 
+    initial velocity
+   * 
+    2 
+    acceleration 
+    displacement

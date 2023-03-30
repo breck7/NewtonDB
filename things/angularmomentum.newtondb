@@ -5,6 +5,8 @@ type equation
 unit meter second
 baseunit meter second
 topic mechanics
-subject dynamic definitions
+subject dynamicsDefinition
 function moment of inertia angular velocity
- * moment of inertia  angular velocity
+ *
+  moment of inertia  
+  angular velocity

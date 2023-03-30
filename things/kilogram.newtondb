@@ -1,0 +1,12 @@
+title kilogram
+type unit base exact object
+description SI base unit defined by taking the fixed numerical value of the Planck constant when expressed in the unit kg⋅m^2⋅s^−1, where the metre and the second are defined in terms of speed of light in vacuum and the caesium frequency.
+wikipedia https://en.wikipedia.org/wiki/Kilogram
+symbol kg
+value 1
+function hyperfine transition frequency of Cs-133 energy transition event of Cs-133 speed of light in vacuum
+ /
+  speed of light in vacuum
+  *
+   hyperfine transition frequency of Cs-133
+   energy transition event of Cs-133

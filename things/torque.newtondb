@@ -5,6 +5,6 @@ type equation
 unit newton meter
 baseunit meter kilogram second
 topic mechanics
-subject dynamic definitions
+subject dynamicsDefinition
 function force particle position vector
  * force particle position vector
