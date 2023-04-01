@@ -2,6 +2,6 @@ baseunitCell
  enum second meter kilogram ampere kelvin mole candela
  highlightScope constant.language
 baseunitNode
- cells keywordCell baseunitCell
+ cells columnNameCell baseunitCell
  catchAllCellType baseunitCell
- extends abstractPropertyNode
+ extends abstractTrueBaseColumnNode

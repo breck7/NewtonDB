@@ -1,3 +1,3 @@
 symbolNode
  description written in latex
- extends abstractStringPropertyNode
+ extends abstractStringColumnNode

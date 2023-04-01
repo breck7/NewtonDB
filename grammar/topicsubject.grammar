@@ -5,9 +5,8 @@ topicCell
  enum mechanics quantum thermodynamics solidstate electromagnetism optics astrophysics
  highlightScope constant.language
 subjectNode
- cells keywordCell
  catchAllCellType subjectCell
+ extends abstractTrueBaseColumnNode
 topicNode
- cells keywordCell
  catchAllCellType topicCell
- extends abstractPropertyNode
+ extends abstractTrueBaseColumnNode
