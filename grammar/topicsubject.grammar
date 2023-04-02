@@ -4,9 +4,9 @@ subjectCell
 topicCell
  enum mechanics quantum thermodynamics solidstate electromagnetism optics astrophysics
  highlightScope constant.language
-subjectNode
+subjectParser
  catchAllCellType subjectCell
- extends abstractTrueBaseColumnNode
-topicNode
+ extends abstractTrueBaseColumnParser
+topicParser
  catchAllCellType topicCell
- extends abstractTrueBaseColumnNode
+ extends abstractTrueBaseColumnParser

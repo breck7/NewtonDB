@@ -4,12 +4,12 @@ operatorCell
  description The operators that connect the terms.
 termOrUnitCell
  // todo Need union types in Grammar.
-expressionNode
+expressionParser
  cells operatorCell trueBaseIdCell
  catchAllCellType termOrUnitCell
-functionNode
+functionParser
  description The parameters should be units
  catchAllCellType unitCell
- extends abstractTrueBaseColumnNode
- catchAllNodeType expressionNode
+ extends abstractTrueBaseColumnParser
+ catchAllParser expressionParser
 

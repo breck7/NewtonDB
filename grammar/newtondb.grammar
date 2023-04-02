@@ -1,8 +1,8 @@
-newtondbNode
+newtondbParser
  root
  string tableName newtondb
  string fileExtension newtondb
- catchAllNodeType trueBaseErrorNode
- inScope blankLineNode abstractTrueBaseColumnNode
-titleNode
- extends abstractStringColumnNode
+ catchAllParser trueBaseErrorParser
+ inScope blankLineParser abstractTrueBaseColumnParser
+titleParser
+ extends abstractStringColumnParser
