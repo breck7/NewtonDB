@@ -3,14 +3,13 @@ operatorCell
  highlightScope constant.language
  description The operators that connect the terms.
 termOrUnitCell
- todo Need union types in Grammar.
-expressionNode
+ // todo Need union types in Grammar.
+expressionParser
  cells operatorCell trueBaseIdCell
  catchAllCellType termOrUnitCell
-functionNode
- cells keywordCell
+functionParser
  description The parameters should be units
  catchAllCellType unitCell
- extends abstractPropertyNode
- catchAllNodeType expressionNode
+ extends abstractTrueBaseColumnParser
+ catchAllParser expressionParser
 

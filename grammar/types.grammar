@@ -1,9 +1,9 @@
 typeCell
  enum unit property equation experiment base exact approx object interaction term constant law derived underived scalar vector
  highlightScope constant.language
-typeNode
+typeParser
  description What kind of thing is this entity?
- cells keywordCell typeCell
+ cells columnNameCell typeCell
  catchAllCellType typeCell
- extends abstractPropertyNode
+ extends abstractTrueBaseColumnParser
  required

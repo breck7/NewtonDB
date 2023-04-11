@@ -1,10 +1,10 @@
 {
   "name": "newtondb",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A database of physics experiments",
   "dependencies": {
     "katex": "^0.16.4",
-    "truebase": "^11.0.0"
+    "truebase": "^14.0.0"
   },
   "prettier": {
     "useTabs": false,
