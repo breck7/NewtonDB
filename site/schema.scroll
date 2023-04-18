@@ -1,7 +1,20 @@
 title NewtonDB Schema
 
+## Terms
+* Phenomenon - A term t refers to a phenomenon x if and only if x satisfies the core causal description associated with t.
+* Concept - Abstract representations of physical properties of phenomena that can simplify and organize complex information.
+* Equation - A mathematical formula that expresses the quantitative relationship between different physical quantities.
+* Law - An empirical generalization that has been tested and verified through repeated observation and experimentation, and describes fundamental aspects of nature.
+* Principle - A general concept or idea that explains the behavior of physical systems and is often derived from laws.
+* Theory - A comprehensive explanation of a particular phenomenon that has been rigorously tested and is widely accepted within the scientific community.
+* Hypothesis - A testable prediction or explanation that is used to guide scientific research and inquiry, based on limited evidence or observation.
+* Fact - Objective and verifiable pieces of information that are supported by empirical evidence obtained through observation, measurement, or experimentation.
+* Reference  
+ https://plato.stanford.edu/entries/theoretical-terms-science/ Reference
+
+
 * Units
-table  
+table
  Column DataType Description
  id integer Unique identifier for the unit
  symbol text Symbol for the unit (e.g. m for meter)
@@ -15,40 +28,35 @@ table
  uncertainty text The level of uncertainty in the measurement (exact, approximate)
  exact real The exact value of the measurement
  approx real The approximate value of the measurement
- relative real The relative uncertainty of the measurement
  std_dev real The standard deviation of the measurement
  derived text The derived unit (e.g. newton, joule)
  dim_analysis text The dimensional analysis of the unit
- unit_conversion text The unit conversion factor
  natural_units text The natural units of the measurement
  historical_units text The historical units of the measurement
 
-* Property
-table  
+* Object_Property
+table
  Column DataType Description
  id integer Unique identifier for the property
  entity text The entity the property belongs to (e.g. object, interaction)
  state text The state of the property (e.g. variable, constant)
- interaction text The type of interaction, if applicable (e.g. electromagnetic, gravitational)
+ interaction_force text The type of interaction, if applicable (e.g. electromagnetic, gravitational)
 
-* Function
-table  
+* Equation
+table
  Column DataType Description
  id integer Unique identifier for the function
- name text Name of the function (e.g. "sin", "cos", "log")
- input_type text Type of input expected by the function (e.g. "numeric", "vector")
- output_type text Type of output produced by the function (e.g. "numeric", "vector")
+ name text Common name for equation
+ math_fucntions text Mathematical functions used in the equation (e.g. "f(x) = sin(x)")
+ input text Input variables
+ input_type text Type of input expected by the function (e.g. "scalar", "vector")
  description_latex text function in Latex notation
- math_notation text Mathematical notation used to represent the function (e.g. "f(x) = sin(x)")
- library_name text Name of the library or module that provides the function
- implementation text Implementation language or technology used for the function
- runtime_complexity text Theoretical runtime complexity of the function (e.g. O(n^2))
- domain text Domain of the function, i.e. the set of values for which it is defined
- range text Range of the function, i.e. the set of values it can produce
  restrictions text Any restrictions on the input or output of the function
+ derivation text Derivation of the equation, including any assumptions and simplifications made
+ units text Units of measurement for input and output variables
 
 * Experiment
-table  
+table
  Column DataType Description
  id integer Unique identifier for the experiment
  name text Name of the experiment
@@ -73,13 +81,14 @@ table
  data_availability text Description of the availability and accessibility of the data collected
 
 * Theory
-table  
+table
  Column DataType Description
  id integer Unique identifier for the theory
  name text Name of the theory
  description text Description of the theory and its purpose
- experiment text Description of the experiments done to validate the theory
- axioms text The axioms on which the theory is based
+ experiment_id text Description of the experiments done to validate the theory
+ law text The law on which the theory is based
+ Principle text The principle on which the theory is based
  people text The people who developed the theory and contributed to its development
  history text A brief history of the development and evolution of the theory
  philosophy text The philosophical assumptions and implications of the theory, including its ontology, epistemology, and methodology
@@ -87,6 +96,35 @@ table
  predictive_power text Description of how well the theory predicts and explains observed phenomena
  scope text Description of the range of phenomena that the theory can explain or predict
  limitations text Description of any known limitations or weaknesses of the theory
- applications text Description of the practical applications of the theory in fields such as engineering, medicine, and technology
  related_theories text List of other theories that are related to or have influenced the development of the theory
  controversies text Description of any controversies or debates surrounding the theory, including criticisms and alternative interpretations
+
+* Law
+table
+ Column DataType Description
+ id integer Unique identifier for the law
+ name text Name of the law
+ description text Description of the law and its purpose
+ experiment_id text Description of the experiments done to validate the law
+ people text The people who developed the law and contributed to its development
+ history text A brief history of the development and evolution of the law
+ philosophy text The philosophical assumptions and implications of the law, including its ontology, epistemology, and methodology
+ mathematical_formulation text Description of the mathematical equations and models that make up the law
+ predictive_power text Description of how well the law predicts and explains observed phenomena
+ limitations text Description of any known limitations or weaknesses of the law
+ controversies text Description of any controversies or debates surrounding the law, including criticisms and alternative interpretations
+
+* Principle
+table
+Column DataType Description
+id integer Unique identifier for the principle
+name text Name of the principle
+description text Description of the principle and its purpose
+law text The law on which the priciple is based
+people text The people who developed the principle and contributed to its development
+history text A brief history of the development and evolution of the principle
+philosophy text The philosophical assumptions and implications of the principle, including its ontology, epistemology, and methodology
+mathematical_formulation text Description of the mathematical equations and models that make up the principle
+predictive_power text Description of how well the principle predicts and explains observed phenomena
+limitations text Description of any known limitations or weaknesses of the principle
+controversies text Description of any controversies or debates surrounding the principle, including criticisms and alternative interpretations
