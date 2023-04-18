@@ -1,0 +1,3 @@
+restrictionParser
+ description Derivation of the equation, including any assumptions and simplifications made
+ extends abstractStringColumnParser

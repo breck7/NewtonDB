@@ -1,0 +1,3 @@
+peopleParser
+ description The people who developed the law and contributed to its development
+ extends abstractNumericColumnParser

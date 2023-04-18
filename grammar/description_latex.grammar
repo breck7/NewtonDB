@@ -1,0 +1,3 @@
+description_latexParser
+ description function in Latex notation
+ extends abstractStringColumnParser
