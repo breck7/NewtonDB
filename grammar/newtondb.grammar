@@ -1,8 +1,0 @@
-newtondbParser
- root
- string tableName newtondb
- string fileExtension newtondb
- catchAllParser trueBaseErrorParser
- inScope blankLineParser abstractTrueBaseColumnParser
-titleParser
- extends abstractStringColumnParser

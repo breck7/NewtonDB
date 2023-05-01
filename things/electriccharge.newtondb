@@ -1,7 +1,0 @@
-title electric charge
-type unit
-description derived SI unit
-wikipedia https://en.wikipedia.org/wiki/Electric_charge
-unit coulomb
-baseunit ampere second
-symbol C

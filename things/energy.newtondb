@@ -1,7 +1,0 @@
-title energy
-type unit
-description derived SI unit
-wikipedia https://en.wikipedia.org/wiki/Energy
-unit joule
-baseunit meter kilogram second
-symbol J

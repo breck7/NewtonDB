@@ -1,7 +1,0 @@
-title solid angle
-type unit
-description derived SI unit
-wikipedia https://en.wikipedia.org/wiki/Solid_angle
-unit steradian unitless
-baseunit meter
-symbol sr

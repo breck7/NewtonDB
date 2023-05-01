@@ -1,7 +1,0 @@
-title force
-type unit
-description derived SI unit
-wikipedia https://en.wikipedia.org/wiki/Force
-unit newton
-baseunit meter kilogram second
-symbol N

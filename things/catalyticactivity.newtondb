@@ -1,7 +1,0 @@
-title catalytic activity
-type unit
-description derived SI unit
-wikipedia https://en.wikipedia.org/wiki/Katal
-unit katal
-baseunit mole second
-symbol kat
