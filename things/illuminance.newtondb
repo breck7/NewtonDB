@@ -1,7 +1,0 @@
-title illuminance
-type unit
-description derived SI unit
-wikipedia https://en.wikipedia.org/wiki/Illuminance
-unit lux
-baseunit meter candela 
-symbol lx

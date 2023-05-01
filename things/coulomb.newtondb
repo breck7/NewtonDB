@@ -1,6 +1,0 @@
-title coulomb
-type unit base exact interaction
-description the amount of charge that flows in one second through a conductor carrying a current of one ampere.
-wikipedia https://en.wikipedia.org/wiki/Elementary_charge
-unit elementary charge
-value 6.241 x 10^18 

@@ -1,7 +1,0 @@
-unitCell
- enum second meter kilogram ampere kelvin mole candela katal farad coulomb siemens volt ohm joule newton hertz lux henry lumen weber tesla radian watt pascal gray sievert becquerel steradian degreeCelsius unitless elementary charge
- highlightScope constant.language
-unitParser
- cells columnNameCell unitCell
- catchAllCellType unitCell
- extends abstractTrueBaseColumnParser

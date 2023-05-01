@@ -1,9 +1,0 @@
-typeCell
- enum unit property equation law experiment base exact approx object interaction term constant law derived underived scalar vector
- highlightScope constant.language
-typeParser
- description What kind of thing is this entity?
- cells columnNameCell typeCell
- catchAllCellType typeCell
- extends abstractTrueBaseColumnParser
- required

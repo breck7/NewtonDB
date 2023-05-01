@@ -1,3 +1,0 @@
-restrictionParser
- description Any restrictions on the input or output of the function
- extends abstractStringColumnParser
