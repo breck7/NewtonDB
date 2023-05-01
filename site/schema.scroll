@@ -1,5 +1,5 @@
 title NewtonDB Schema
-
+## Not all are implemented yet. More Coming Soon
 ## Terms
 * Phenomenon - A term t refers to a phenomenon x if and only if x satisfies the core causal description associated with t.
 * Concept - Abstract representations of physical properties of phenomena that can simplify and organize complex information.
