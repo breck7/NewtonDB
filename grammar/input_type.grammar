@@ -1,3 +1,0 @@
-input_typeParser
- description Type of input expected by the function (e.g. "scalar", "vector")
- extends abstractStringColumnParser

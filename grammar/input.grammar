@@ -1,3 +1,0 @@
-inputParser
- description Input variables
- extends abstractStringColumnParser
