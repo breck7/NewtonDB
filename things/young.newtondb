@@ -1,0 +1,40 @@
+theory wave theory of light 
+ philosophy nature of light based on Christiaan Huygen
+ experiment
+  nameExperiment Young's Double Slit Experiment
+  equation
+   nameEquation Interference Pattern Equation
+   mathemacticalFormulation
+    katex I(x) = I₀ [cos(πdx / λL)]²
+   object slits
+    property
+     length
+      state constant
+       baseState constant
+      Value L
+      unit meter
+       symbol m
+   object light
+    property
+     intensity
+      state
+       baseState constant
+      Value I₀
+      unit watts per square meter
+       symbol W/m^2
+     intensity
+      state
+       baseState variable
+      Value I
+      unit watts per square meter
+       symbol
+     position
+      state
+       baseState variable
+      Value x
+      unit
+     wavelength
+      state constant
+      Value λ
+      unit meter
+       symbol m
