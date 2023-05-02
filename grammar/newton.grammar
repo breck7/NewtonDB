@@ -478,135 +478,113 @@ halfLifeCell
 
 // Property Parsers
 propertyParser
- inScope massParser volumeParser densityParser shapeParser sizeParser weightParser colorParser temperatureParser electricChargeParser electricCurrentParser magneticFieldParser magnetizationParser refractiveIndexParser hardnessParser elasticityParser conductivityParser thermalConductivityParser specificHeatParser meltingPointParser boilingPointParser viscosityParser surfaceTensionParser chemicalCompositionParser radioactivityParser halfLifeParser
+ inScope abstractPropertyParser
  catchAllCellType anyCell
  cells keywordCell
  cruxFromId
-massParser
- inScope unitParser ValueParser
- catchAllCellType massCell
+abstractPropertyParser
  cells keywordCell
  cruxFromId
+massParser
+ extends abstractPropertyParser
+ inScope unitParser ValueParser
+ catchAllCellType massCell
 volumeParser
  inScope unitParser ValueParser
  catchAllCellType volumeCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 densityParser
  inScope unitParser ValueParser
  catchAllCellType densityCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 shapeParser
  inScope unitParser ValueParser
  catchAllCellType shapeCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 sizeParser
  inScope unitParser ValueParser
  catchAllCellType sizeCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 weightParser
  inScope unitParser ValueParser
  catchAllCellType weightCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 colorParser
  inScope unitParser ValueParser
  catchAllCellType colorCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 temperatureParser
  inScope unitParser ValueParser
  catchAllCellType temperatureCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 electricChargeParser
  inScope unitParser ValueParser
  catchAllCellType electricChargeCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 electricCurrentParser
  inScope unitParser ValueParser
  catchAllCellType electricCurrentCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 magneticFieldParser
  inScope unitParser ValueParser
  catchAllCellType magneticFieldCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 magnetizationParser
  inScope unitParser ValueParser
  catchAllCellType magnetizationCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 refractiveIndexParser
  inScope unitParser ValueParser
  catchAllCellType refractiveIndexCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 hardnessParser
  inScope unitParser ValueParser
  catchAllCellType hardnessCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 elasticityParser
  inScope unitParser ValueParser
  catchAllCellType elasticityCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 conductivityParser
  inScope unitParser ValueParser
  catchAllCellType conductivityCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 thermalConductivityParser
  inScope unitParser ValueParser
  catchAllCellType thermalConductivityCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 specificHeatParser
  inScope unitParser ValueParser
  catchAllCellType specificHeatCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 meltingPointParser
  inScope unitParser ValueParser
  catchAllCellType meltingPointCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 boilingPointParser
  inScope unitParser ValueParser
  catchAllCellType boilingPointCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 viscosityParser
  inScope unitParser ValueParser
  catchAllCellType viscosityCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 surfaceTensionParser
  inScope unitParser ValueParser
  catchAllCellType surfaceTensionCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 chemicalCompositionParser
  inScope unitParser ValueParser
  catchAllCellType chemicalCompositionCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 radioactivityParser
  inScope unitParser ValueParser
  catchAllCellType radioactivityCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 halfLifeParser
  inScope unitParser ValueParser
  catchAllCellType halfLifeCell
- cells keywordCell
- cruxFromId
+ extends abstractPropertyParser
 
 // Value Cells (included in data cells for now)
 
