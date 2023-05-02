@@ -380,15 +380,22 @@ scopeParser
 
 
 // Main Parser
-newtonParser
+newtondbParser
  root
+ string fileExtension newtondb
  description Physics Databasing
- inScope lawParser theoryParser principleParser experimentParser equationParser objectParser stateParser interactionParser blankLineParser
+ inScope lawParser theoryParser principleParser experimentParser equationParser objectParser stateParser interactionParser blankLineParser titleParser
  cruxFromId
  catchAllParser errorParser
 
+// Specific column types
+titleParser
+ extends abstractStringColumnParser
+ description What is the title of this entry?
+
 // Law Parsers
 lawParser
+ extends abstractStringColumnParser
  inScope experimentParser predictivePowerParser controversiesParser historyParser limitationParser philosophyParser scopeParser
  catchAllCellType idlawCell
  cells keywordCell
@@ -406,6 +413,7 @@ nameLawParser
 
 // Theory Parsers
 theoryParser
+ extends abstractStringColumnParser
  inScope experimentParser predictivePowerParser controversiesParser historyParser limitationParser philosophyParser scopeParser
  catchAllCellType anyCell
  cells keywordCell
