@@ -383,7 +383,7 @@ scopeParser
 newtonParser
  root
  description Physics Databasing
- inScope lawParser theoryParser principleParser experimentParser equationParser objectParser stateParser interactionParser
+ inScope lawParser theoryParser principleParser experimentParser equationParser objectParser stateParser interactionParser blankLineParser
  cruxFromId
  catchAllParser errorParser
 
