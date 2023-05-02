@@ -4,8 +4,7 @@ theory wave theory of light
   nameExperiment Young's Double Slit Experiment
   equation
    nameEquation Interference Pattern Equation
-   mathemacticalFormulation
-    katex I(x) = I₀ [cos(πdx / λL)]²
+   mathemacticalFormulation I(x) = I₀ [cos(πdx / λL)]²
    object slits
     property
      length

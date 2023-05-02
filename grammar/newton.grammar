@@ -222,10 +222,8 @@ idEquationCell
  highlightScope text
 nameEquationCell
  extends stringCell
-mathemacticalFormulationCell
+katexCell
  extends stringCell
-mathFunctionsCell
- highlightScope text
 descriptionCell
  extends stringCell
 modelingAndSimulationCell
@@ -249,12 +247,12 @@ nameEquationParser
  cruxFromId
 mathemacticalFormulationParser
  description Mathematical functions used in the equation (e.g. "f(x) = sin(x)")
- catchAllCellType mathemacticalFormulationCell
+ catchAllCellType katexCell
  cells keywordCell
  cruxFromId
 mathFunctionsParser
  description Mathematical functions used in the equation (e.g. "f(x) = sin(x)")
- catchAllCellType mathFunctionsCell
+ catchAllCellType katexCell
  cells keywordCell
  cruxFromId
 descriptionParser
