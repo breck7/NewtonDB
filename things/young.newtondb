@@ -1,0 +1,12 @@
+title wave theory of light 
+theory wave theory of light 
+ philosophy nature of light based on Christiaan Huygen
+ experiment
+  nameExperiment Young's Double Slit Experiment
+  equation
+   nameEquation Interference Pattern Equation
+   mathemacticalFormulation I(x) = I₀ [cos(πdx / λL)]²
+   object slits
+    property
+   object light
+    property
