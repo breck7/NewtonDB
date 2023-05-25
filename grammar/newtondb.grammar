@@ -92,16 +92,19 @@ reproducibilityCell
  extends booleanCell
 dataTypeCell
  extends textCell
-assumptionsCell
+propositionCell
  extends textCell
+hypothesisCell
 controlCell
  extends textCell
 locationCell
  extends textCell
+publicationCell
+ extends textCell
 
 // Experiment Parses  
 experimentParser
- inScope equationParser idExperimentParser nameExperimentParser dataAvailabilityParser dataTypeParser reproducibilityParser assumptionsParser controlParser
+ inScope equationParser idExperimentParser nameExperimentParser dataAvailabilityParser dataTypeParser reproducibilityParser propositionParser hypothesisParser controlParser publicationParser
  catchAllCellType anyCell
  cells keywordCell
  cruxFromId
@@ -130,11 +133,16 @@ reproducibilityParser
  catchAllCellType reproducibilityCell
  cells keywordCell
  cruxFromId
-assumptionsParser
- description Description of the assumptions made during the experiment
- catchAllCellType assumptionsCell
+propositionParser
+ description Description of the propositions made in the experiment
+ catchAllCellType propositionCell
  cells keywordCell
  cruxFromId
+hypothesisParser
+ description Description of the hypothesis made in the experiment
+ catchAllCellType hypothesisCell
+ cells keywordCell
+ cruxFromId 
 controlParser
  description Description of the control used during the experiment
  catchAllCellType controlCell
@@ -145,6 +153,14 @@ locationParser
  catchAllCellType locationCell
  cells keywordCell
  cruxFromId
+
+publicationParser
+ description Paper where experiment was published
+ catchAllCellType publicationCell
+ cells keywordCell
+ cruxFromId 
+
+
 // Interaction Cells
 idInteractionCell
  extends intCell
