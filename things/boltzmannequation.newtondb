@@ -1,9 +1,0 @@
-id 1
-title Boltzmann equation
-type equation
-input p (pressure), V (volume), T (temperature), m (mass of a single molecule), k (Boltzmann constant)
-input_type scalar
-description_latex PV = \frac{m}{k}RT
-restrictions Assumes a dilute gas and ignores intermolecular forces.
-units pascal volume temperature mass Boltzmann
-derivation Starting from the ideal gas law: $PV=nRT$ where $n$ is the number of moles of gas and $R$ is the gas constant. We can rearrange this equation to express $n$ in terms of the number of particles $N$, using Avogadro's constant $N_A$: $n=N/N_A$. Substituting this expression for $n$ into the ideal gas law, we get: $PV=NkT$, where $k$ is the Boltzmann constant, defined as: $k=R/N_A$. Therefore, the Boltzmann equation expresses the relationship between the pressure, volume, and temperature of a gas, and the number of particles of the gas.
