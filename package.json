@@ -3,8 +3,7 @@
   "version": "2.0.0",
   "description": "A database of physics experiments",
   "dependencies": {
-    "katex": "^0.16.4",
-    "truebase": "^16.7.0"
+    "truebase": "19.0.0"
   },
   "prettier": {
     "useTabs": false,
@@ -15,9 +14,7 @@
   },
   "scripts": {
     "trueBaseBeta": "npm install ~/truebase",
-    "launch": "git pull; npm install .; npm run restart",
     "test": "truebase test",
-    "local": "truebase start",
-    "restart": "pm2 restart 0"
+    "local": "truebase start"
   }
 }
