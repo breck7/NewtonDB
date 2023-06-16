@@ -3,7 +3,7 @@ siteName NewtonDB
 siteDomain newtondb.com
 grammarFolder ./columns
 queriesFolder ./queries
-thingsFolder ./rows
+rowsFolder ./rows
 ignoreFolder ./ignore
 siteFolder ./site
 devPort 1921
