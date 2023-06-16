@@ -1,0 +1,31 @@
+import header.scroll
+title SITE_NAME Column Documentation
+
+css
+ .scrollTableComponent td {
+   max-width: 30ch;
+ }
+ .scrollTableComponent td:nth-child(5) {
+   max-width: 20ch;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+ }
+
+Download TRUEBASE_ID.csv
+ link TRUEBASE_ID.csv
+
+SITE_NAME builds one main CSV file. `TRUEBASE_ID.csv` contains 1 rows and 3 columns and is 61.0B uncompressed (57.0B <a href="/newtondb.csv.zip">compressed</a>). Every row is an entity and every entity is one row. You can also download the typed tree structured data as JSON.
+ link TRUEBASE_ID.json JSON
+
+# Column Documentation
+
+table !~DELIM~!
+ Index!~DELIM~!Column!~DELIM~!ColumnLink!~DELIM~!Values!~DELIM~!Coverage!~DELIM~!Type!~DELIM~!Example!~DELIM~!Description!~DELIM~!Source!~DELIM~!SourceLink!~DELIM~!Definition!~DELIM~!DefinitionLink
+  1!~DELIM~!title!~DELIM~!search.html?q=select+title%0D%0AnotMissing+title%0D%0AsortBy+title%0D%0Areverse!~DELIM~!1!~DELIM~!100%!~DELIM~!string!~DELIM~!wave theory of light !~DELIM~!What is the title of this entry?!~DELIM~!!~DELIM~!!~DELIM~!newtondb.grammar!~DELIM~!/grammar/newtondb.grammar#L408
+  2!~DELIM~!theory!~DELIM~!search.html?q=select+theory%0D%0AnotMissing+theory%0D%0AsortBy+theory%0D%0Areverse!~DELIM~!1!~DELIM~!100%!~DELIM~!string!~DELIM~!wave theory of light !~DELIM~!!~DELIM~!!~DELIM~!!~DELIM~!newtondb.grammar!~DELIM~!/grammar/newtondb.grammar#L431
+  3!~DELIM~!law!~DELIM~!search.html?q=select+law%0D%0AnotMissing+law%0D%0AsortBy+law%0D%0Areverse!~DELIM~!0!~DELIM~!0%!~DELIM~!string!~DELIM~!!~DELIM~!!~DELIM~!!~DELIM~!!~DELIM~!newtondb.grammar!~DELIM~!/grammar/newtondb.grammar#L413
+
+The table above is also available as csv.
+ link BASE_URL/columns.csv csv
+
+import footer.scroll

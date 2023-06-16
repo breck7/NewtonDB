@@ -1,0 +1,68 @@
+<script>
+  const confetti = () => {
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('viewBox', '0 0 50 50');
+  svg.style.position = 'fixed';
+  svg.style.top = '-10px';
+  svg.style.left = (Math.random() * window.innerWidth) + 'px';
+  const confettiTypes = ['circle', 'rect', 'polygon'];
+  const confettiType = confettiTypes[Math.floor(Math.random() * confettiTypes.length)];
+  const confettiColor = getRandomColor();
+  const confettiSize = Math.random() * 10 + 5;
+  const confettiShape = createConfettiShape(confettiType, confettiSize, confettiColor);
+  svg.appendChild(confettiShape);
+  document.body.appendChild(svg);
+  const angle = Math.random() * 360;
+  const distance = Math.random() * 200 + 100;
+  const x = svg.offsetLeft;
+  const y = svg.offsetTop;
+  const dx = distance * Math.cos(angle * Math.PI / 180);
+  const dy = distance * Math.sin(angle * Math.PI / 180);
+  let t = 0;
+  const fall = setInterval(() => {
+    t += 0.05;
+    svg.style.left = `${x + dx * t}px`;
+    svg.style.top = `${y + (dy * t + 0.5 * 500 * t * t) / 100}px`;
+    if (svg.offsetTop >= window.innerHeight) {
+      clearInterval(fall);
+      svg.remove();
+    }
+  }, 10);
+};
+
+const createConfettiShape = (type, size, color) => {
+  const shape = document.createElementNS('http://www.w3.org/2000/svg', type);
+  if (type === 'circle') {
+    shape.setAttribute('cx', '25');
+    shape.setAttribute('cy', '25');
+    shape.setAttribute('r', size / 2);
+  } else if (type === 'rect') {
+    shape.setAttribute('x', '0');
+    shape.setAttribute('y', '0');
+    shape.setAttribute('width', size);
+    shape.setAttribute('height', size);
+  } else if (type === 'polygon') {
+    const points = [];
+    for (let i = 0; i < 5; i++) {
+      const x = Math.sin(i * 0.2 * Math.PI) * size / 2 + size / 2;
+      const y = Math.cos(i * 0.2 * Math.PI) * size / 2 + size / 2;
+      points.push(`${x},${y}`);
+    }
+    shape.setAttribute('points', points.join(' '));
+  }
+  shape.setAttribute('fill', color);
+  return shape;
+};
+
+const getRandomColor = () => {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
+setInterval(confetti, 100);
+
+</script>

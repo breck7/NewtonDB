@@ -1,0 +1,4 @@
+Index,Column,ColumnLink,Values,Coverage,Type,Example,Description,Source,SourceLink,Definition,DefinitionLink
+1,title,search.html?q=select+title%0D%0AnotMissing+title%0D%0AsortBy+title%0D%0Areverse,1,100%,string,wave theory of light ,What is the title of this entry?,,,newtondb.grammar,/grammar/newtondb.grammar#L408
+2,theory,search.html?q=select+theory%0D%0AnotMissing+theory%0D%0AsortBy+theory%0D%0Areverse,1,100%,string,wave theory of light ,,,,newtondb.grammar,/grammar/newtondb.grammar#L431
+3,law,search.html?q=select+law%0D%0AnotMissing+law%0D%0AsortBy+law%0D%0Areverse,0,0%,string,,,,,newtondb.grammar,/grammar/newtondb.grammar#L413

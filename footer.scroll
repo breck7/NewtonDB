@@ -1,0 +1,24 @@
+importOnly
+
+viewSource
+
+stumpNoSnippet
+ div
+  class trueBaseThemeFooter
+  a SITE_NAME
+   href BASE_URL/index.html
+   class trueBaseThemeLogo
+  span ·
+  a Search
+   href BASE_URL/search.html
+  span ·
+  a Add Row
+   href BASE_URL/create.html
+  span ·
+  a Queries
+   href BASE_URL/queries.html
+  span ·
+  a Stats
+   href BASE_URL/stats.html
+
+<script src="BASE_URL/combined.js" defer></script>

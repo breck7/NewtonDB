@@ -1,0 +1,10 @@
+import header.scroll
+title Thank you!
+
+Success! Your contributions have been committed: <span id="commitHash"></span>
+
+<script>document.addEventListener("DOMContentLoaded", () => TrueBaseBrowserApp.getApp().renderThankYouCommand("GIT_URL"))</script>
+
+From all of us at SITE_NAME, as well as all future readers, thank you!
+
+import footer.scroll

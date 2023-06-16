@@ -1,0 +1,27 @@
+import ../header.scroll
+viewSourceUrl /rows/young.newtondb
+keyboardNav young.html young.html
+html <a class="trueBaseThemePreviousItem" href="young.html">&lt;</a><a class="trueBaseThemeNextItem" href="young.html">&gt;</a>
+
+title wave theory of light 
+
+
+
+Edit
+ link /edit.html?id=young
+
+code
+ title wave theory of light 
+ theory wave theory of light 
+  philosophy nature of light based on Christiaan Huygen
+  experiment
+   nameExperiment Young's Double Slit Experiment
+   equation
+    nameEquation Interference Pattern Equation
+    mathemacticalFormulation I(x) = I₀ [cos(πdx / λL)]²
+    object slits
+     property
+    object light
+     property
+
+import ../footer.scroll

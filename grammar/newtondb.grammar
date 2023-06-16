@@ -1,0 +1,622 @@
+// Change MathFormulation and mathFUncitons to Latex and add Delimiter
+// Add description
+
+
+// Grammar Cells
+keywordCell
+anyCell
+intCell
+ regex \-?[0-9]+
+ highlightScope constant.numeric
+numericCell
+floatCell
+numbersCell
+ highlightScope constant.numeric
+nameCell
+ highlightScope string
+textCell
+ highlightScope text
+stringCell
+ highlightScope string
+ examples lorem ipsum
+booleanCell
+ enum false true
+
+// Unit Cells
+idUnitCell
+ extends intCell
+idBaseUnitCell
+ extends stringCell
+symbolCell
+ highlightScope keyword.operator.word
+approxCell
+ enum True False
+baseCell
+ enum second meter kilogram ampere kelvin mole candela
+uncertaintyUnitCell
+ extends stringCell
+systemUnitCell
+ extends stringCell
+
+// Unit Parsers 
+unitParser
+ catchAllCellType anyCell
+ cells keywordCell
+ cruxFromId
+ inScope idUnitParser idBaseUnitParser symbolParser approxParser baseParser uncertaintyUnitParser systemUnitParser
+idUnitParser
+ description Unique identifier for the unit
+ catchAllCellType idUnitCell
+ cells keywordCell
+ cruxFromId
+idBaseUnitParser
+ description The id of the base unit for a derived unit (null if base unit)
+ catchAllCellType idBaseUnitCell
+ cells keywordCell
+ cruxFromId
+symbolParser
+ description Symbol for the unit (e.g. m for meter)
+ catchAllCellType symbolCell
+ cells keywordCell
+ cruxFromId
+approxParser
+ description The level of uncertainty in the measurement (exact, approximate)
+ catchAllCellType approxCell
+ cells keywordCell
+ cruxFromId
+baseParser
+ description The base unit (e.g. meter, kilogram)
+ catchAllCellType baseCell
+ cells keywordCell
+ cruxFromId
+uncertaintyUnitParser
+ description The level of uncertainty in the measurement (exact, approximate)
+ catchAllCellType uncertaintyUnitCell
+ cells keywordCell
+ cruxFromId
+systemUnitParser
+ description The measurement system to which the unit belongs (e.g. "SI", "Imperial")
+ catchAllCellType systemUnitCell
+ cells keywordCell
+ cruxFromId
+
+
+// Experiment Cells
+idExperimentCell
+ extends intCell
+nameExperimentCell
+ extends textCell
+dataAvailabilityCell
+ extends booleanCell
+reproducibilityCell
+ extends booleanCell
+dataTypeCell
+ extends textCell
+propositionCell
+ extends textCell
+hypothesisCell
+controlCell
+ extends textCell
+locationCell
+ extends textCell
+publicationCell
+ extends textCell
+
+// Experiment Parses  
+experimentParser
+ inScope equationParser idExperimentParser nameExperimentParser dataAvailabilityParser dataTypeParser reproducibilityParser propositionParser hypothesisParser controlParser publicationParser
+ catchAllCellType anyCell
+ cells keywordCell
+ cruxFromId
+idExperimentParser
+ description Unique identifier for the experiment
+ catchAllCellType idExperimentCell
+ cells keywordCell
+ cruxFromId
+nameExperimentParser
+ description Name of the experiment
+ catchAllCellType nameExperimentCell
+ cells keywordCell
+ cruxFromId
+dataAvailabilityParser
+ description Description of the data collected during the experiment
+ catchAllCellType dataAvailabilityCell
+ cells keywordCell
+ cruxFromId
+dataTypeParser
+ description Description of the data collected during the experiment
+ catchAllCellType dataTypeCell
+ cells keywordCell
+ cruxFromId
+reproducibilityParser
+ description Description of the reproducibility of the experiment
+ catchAllCellType reproducibilityCell
+ cells keywordCell
+ cruxFromId
+propositionParser
+ description Description of the propositions made in the experiment
+ catchAllCellType propositionCell
+ cells keywordCell
+ cruxFromId
+hypothesisParser
+ description Description of the hypothesis made in the experiment
+ catchAllCellType hypothesisCell
+ cells keywordCell
+ cruxFromId 
+controlParser
+ description Description of the control used during the experiment
+ catchAllCellType controlCell
+ cells keywordCell
+ cruxFromId
+locationParser
+ description Location where the experiment was conducted
+ catchAllCellType locationCell
+ cells keywordCell
+ cruxFromId
+
+publicationParser
+ description Paper where experiment was published
+ catchAllCellType publicationCell
+ cells keywordCell
+ cruxFromId 
+
+
+// Interaction Cells
+idInteractionCell
+ extends intCell
+baseInteractionCell
+ enum electromagnetic gravitational strongNuclear weakNuclear
+
+// Interaction Cells
+idInteractionCell
+ extends intCell
+baseInteractionCell
+ enum electromagnetic gravitational strongNuclear weakNuclear
+
+// Interction Parsers
+interactionParser
+ description Parsers for interactions between entities
+ inScope idInteractionParser baseInteractionParser
+ catchAllCellType anyCell
+ cells keywordCell
+ cruxFromId
+idInteractionParser
+ description Unique identifier for the interaction
+ catchAllCellType idInteractionCell
+ cells keywordCell
+ cruxFromId
+baseInteractionParser
+ description The type of interaction (electromagnetic, gravitational, strong nuclear, weak nuclear)
+ catchAllCellType baseInteractionCell
+ cells keywordCell
+ cruxFromId
+
+// State Cells
+idStateCell
+ extends intCell
+baseStateCell
+ enum consant variable
+
+// State Parsers
+stateParser
+ catchAllCellType anyCell
+ cells keywordCell
+ cruxFromId
+idStateParser
+ description Unique identifier for the state
+ catchAllCellType idStateCell
+ cells keywordCell
+ cruxFromId
+baseStateParser
+ description The state of the property (either variable or constant)
+ catchAllCellType baseStateCell
+ cells keywordCell
+ cruxFromId
+// Object Cells
+idObjectCell
+ extends intCell
+nameObjectCell
+ extends stringCell
+
+// Object Parsers
+objectParser
+ inScope interactionParser stateParser propertyParser idObjectParser nameObjectParser
+ catchAllCellType anyCell
+ cells keywordCell
+ cruxFromId
+idObjectParser
+ catchAllCellType idObjectCell
+ cells keywordCell
+ cruxFromId
+nameObjectParser
+ catchAllCellType nameObjectCell
+ cells keywordCell
+ cruxFromId
+
+// Equation Cells
+idEquationCell
+ highlightScope text
+nameEquationCell
+ extends stringCell
+katexCell
+ extends stringCell
+descriptionCell
+ extends stringCell
+modelingAndSimulationCell
+ extends stringCell
+
+// Equation Parsers
+equationParser
+ inScope objectParser idEquationParser nameEquationParser mathemacticalFormulationParser mathFunctionsParser descriptionParser modelingAndSimulationParser
+ catchAllCellType anyCell
+ cells keywordCell
+ cruxFromId
+idEquationParser
+ description Unique identifier for the equation
+ catchAllCellType idEquationCell
+ cells keywordCell
+ cruxFromId
+nameEquationParser
+ description Common name for equation
+ catchAllCellType nameEquationCell
+ cells keywordCell
+ cruxFromId
+mathemacticalFormulationParser
+ description Mathematical functions used in the equation (e.g. "f(x) = sin(x)")
+ catchAllCellType katexCell
+ cells keywordCell
+ cruxFromId
+mathFunctionsParser
+ description Mathematical functions used in the equation (e.g. "f(x) = sin(x)")
+ catchAllCellType katexCell
+ cells keywordCell
+ cruxFromId
+descriptionParser
+ description Description of the equation, including any assumptions and simplifications made
+ catchAllCellType descriptionCell
+ cells keywordCell
+ cruxFromId
+modelingAndSimulationParser
+ description Description of any modeling and simulation done as part of the equation
+ catchAllCellType modelingAndSimulationCell
+ cells keywordCell
+ cruxFromId
+
+// Data Cells
+idDataCell
+ extends intCell
+nameDataCell
+ extends stringCell
+sampleSizeCell
+ extends numericCell
+uncertaintyExperimentCell
+ extends numericCell
+valueCell
+ extends numericCell
+dataCollectionPeriodCell
+ extends stringCell
+notesCell
+ extends stringCell
+
+// Data Parsers
+idDataParser
+ inScope unitParser ValueParser
+ catchAllCellType idDataCell
+ cells keywordCell
+ cruxFromId
+nameDataParser
+ inScope unitParser ValueParser
+ catchAllCellType nameDataCell
+ cells keywordCell
+ cruxFromId
+sampleSizeParser
+ inScope unitParser ValueParser
+ catchAllCellType sampleSizeCell
+ cells keywordCell
+ cruxFromId
+uncertaintyExperimentParser
+ inScope unitParser ValueParser
+ catchAllCellType uncertaintyExperimentCell
+ cells keywordCell
+ cruxFromId
+valueParser
+ inScope unitParser ValueParser
+ catchAllCellType valueCell
+ cells keywordCell
+ cruxFromId
+dataCollectionPeriodParser
+ inScope unitParser ValueParser
+ catchAllCellType dataCollectionPeriodCell
+ cells keywordCell
+ cruxFromId
+notesParser
+ inScope unitParser ValueParser
+ catchAllCellType notesCell
+ cells keywordCell
+ cruxFromId
+
+// Law/Principle/Theory Cells
+idPrincipleCell
+ extends stringCell
+idlawCell
+ description Unique identifier for the law
+ highlightScope text
+nameLawCell
+ description Name of the law
+ highlightScope text
+namePrincipleCell
+ extends stringCell
+nameTheoryCell
+ extends stringCell
+idExperimentCell
+ description id of the experiments done to validate the law
+ extends intCell
+predictivePowerCell
+ highlightScope text
+controversiesCell
+ extends stringCell
+historyCell
+ extends stringCell
+lawCell
+ extends stringCell
+limitationCell
+ extends stringCell
+philosophyCell
+ extends stringCell
+scopeCell
+ extends stringCell
+
+
+// Shared Parsers for theory/principle/law
+predictivePowerParser
+ catchAllCellType predictivePowerCell
+ cells keywordCell
+ cruxFromId
+controversiesParser
+ catchAllCellType controversiesCell
+ cells keywordCell
+ cruxFromId
+historyParser
+ catchAllCellType historyCell
+ cells keywordCell
+ cruxFromId
+limitationParser
+ catchAllCellType limitationCell
+ cells keywordCell
+ cruxFromId
+philosophyParser
+ catchAllCellType philosophyCell
+ cells keywordCell
+ cruxFromId
+scopeParser
+ catchAllCellType scopeCell
+ cells keywordCell
+ cruxFromId
+
+
+
+// Main Parser
+newtondbParser
+ root
+ string fileExtension newtondb
+ description Physics Databasing
+ inScope lawParser theoryParser principleParser experimentParser equationParser objectParser stateParser interactionParser blankLineParser titleParser
+ cruxFromId
+ catchAllParser errorParser
+
+// Specific column types
+titleParser
+ extends abstractStringColumnParser
+ description What is the title of this entry?
+
+// Law Parsers
+lawParser
+ extends abstractStringColumnParser
+ inScope experimentParser predictivePowerParser controversiesParser historyParser limitationParser philosophyParser scopeParser
+ catchAllCellType idlawCell
+ cells keywordCell
+ cruxFromId
+idlawParser
+ inScope unitParser ValueParser
+ catchAllCellType idlawCell
+ cells keywordCell
+ cruxFromId
+nameLawParser
+ inScope unitParser ValueParser
+ catchAllCellType nameLawCell
+ cells keywordCell
+ cruxFromId
+
+// Theory Parsers
+theoryParser
+ extends abstractStringColumnParser
+ inScope experimentParser predictivePowerParser controversiesParser historyParser limitationParser philosophyParser scopeParser
+ catchAllCellType anyCell
+ cells keywordCell
+ cruxFromId
+nameTheoryParser
+ inScope unitParser ValueParser
+ catchAllCellType nameTheoryCell
+ cells keywordCell
+ cruxFromId
+
+// Principle Parsers
+principleParser
+ inScope experimentParser predictivePowerParser controversiesParser historyParser limitationParser philosophyParser scopeParser
+ catchAllCellType anyCell
+ cells keywordCell
+ cruxFromId
+
+
+// Property Cells
+massCell
+ extends numericCell
+volumeCell
+ extends numericCell
+densityCell
+ extends numericCell
+shapeCell
+ extends stringCell
+sizeCell
+ extends numericCell
+weightCell
+ extends numericCell
+colorCell
+ extends stringCell
+temperatureCell
+ extends numericCell
+electricChargeCell
+ extends numericCell
+electricCurrentCell
+ extends numericCell
+magneticFieldCell
+ extends numericCell
+magnetizationCell
+ extends numericCell
+refractiveIndexCell
+ extends numericCell
+hardnessCell
+ extends numericCell
+elasticityCell
+ extends numericCell
+conductivityCell
+ extends numericCell
+thermalConductivityCell
+ extends numericCell
+specificHeatCell
+ extends numericCell
+meltingPointCell
+ extends numericCell
+boilingPointCell
+ extends numericCell
+viscosityCell
+ extends numericCell
+surfaceTensionCell
+ extends numericCell
+chemicalCompositionCell
+ extends stringCell
+radioactivityCell
+ extends numericCell
+halfLifeCell
+ extends numericCell
+
+// Property Parsers
+propertyParser
+ inScope abstractPropertyParser
+ catchAllCellType anyCell
+ cells keywordCell
+ cruxFromId
+abstractPropertyParser
+ cells keywordCell
+ cruxFromId
+massParser
+ extends abstractPropertyParser
+ inScope unitParser ValueParser
+ catchAllCellType massCell
+volumeParser
+ inScope unitParser ValueParser
+ catchAllCellType volumeCell
+ extends abstractPropertyParser
+densityParser
+ inScope unitParser ValueParser
+ catchAllCellType densityCell
+ extends abstractPropertyParser
+shapeParser
+ inScope unitParser ValueParser
+ catchAllCellType shapeCell
+ extends abstractPropertyParser
+sizeParser
+ inScope unitParser ValueParser
+ catchAllCellType sizeCell
+ extends abstractPropertyParser
+weightParser
+ inScope unitParser ValueParser
+ catchAllCellType weightCell
+ extends abstractPropertyParser
+colorParser
+ inScope unitParser ValueParser
+ catchAllCellType colorCell
+ extends abstractPropertyParser
+temperatureParser
+ inScope unitParser ValueParser
+ catchAllCellType temperatureCell
+ extends abstractPropertyParser
+electricChargeParser
+ inScope unitParser ValueParser
+ catchAllCellType electricChargeCell
+ extends abstractPropertyParser
+electricCurrentParser
+ inScope unitParser ValueParser
+ catchAllCellType electricCurrentCell
+ extends abstractPropertyParser
+magneticFieldParser
+ inScope unitParser ValueParser
+ catchAllCellType magneticFieldCell
+ extends abstractPropertyParser
+magnetizationParser
+ inScope unitParser ValueParser
+ catchAllCellType magnetizationCell
+ extends abstractPropertyParser
+refractiveIndexParser
+ inScope unitParser ValueParser
+ catchAllCellType refractiveIndexCell
+ extends abstractPropertyParser
+hardnessParser
+ inScope unitParser ValueParser
+ catchAllCellType hardnessCell
+ extends abstractPropertyParser
+elasticityParser
+ inScope unitParser ValueParser
+ catchAllCellType elasticityCell
+ extends abstractPropertyParser
+conductivityParser
+ inScope unitParser ValueParser
+ catchAllCellType conductivityCell
+ extends abstractPropertyParser
+thermalConductivityParser
+ inScope unitParser ValueParser
+ catchAllCellType thermalConductivityCell
+ extends abstractPropertyParser
+specificHeatParser
+ inScope unitParser ValueParser
+ catchAllCellType specificHeatCell
+ extends abstractPropertyParser
+meltingPointParser
+ inScope unitParser ValueParser
+ catchAllCellType meltingPointCell
+ extends abstractPropertyParser
+boilingPointParser
+ inScope unitParser ValueParser
+ catchAllCellType boilingPointCell
+ extends abstractPropertyParser
+viscosityParser
+ inScope unitParser ValueParser
+ catchAllCellType viscosityCell
+ extends abstractPropertyParser
+surfaceTensionParser
+ inScope unitParser ValueParser
+ catchAllCellType surfaceTensionCell
+ extends abstractPropertyParser
+chemicalCompositionParser
+ inScope unitParser ValueParser
+ catchAllCellType chemicalCompositionCell
+ extends abstractPropertyParser
+radioactivityParser
+ inScope unitParser ValueParser
+ catchAllCellType radioactivityCell
+ extends abstractPropertyParser
+halfLifeParser
+ inScope unitParser ValueParser
+ catchAllCellType halfLifeCell
+ extends abstractPropertyParser
+
+// Value Cells (included in data cells for now)
+
+// Value Parser
+ValueParser
+ catchAllCellType valueCell
+ cells keywordCell
+ cruxFromId
+
+errorParser
+ baseParser errorParser

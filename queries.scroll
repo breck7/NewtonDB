@@ -1,0 +1,6 @@
+import header.scroll
+title SITE_NAME Queries
+
+import newQueries.scroll
+
+import footer.scroll

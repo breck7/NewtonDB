@@ -1,0 +1,35 @@
+import header.scroll
+
+canonicalLink 
+
+title What are all the entries in NewtonDB?
+ hidden
+
+
+
+html
+ <form method="get" action="/search.html" class="tqlForm">
+ <textarea id="tqlInput" name="q">title What are all the entries in NewtonDB?</textarea>
+ <input type="submit" value="Search"></form>
+
+<div id="tqlErrors"></div>
+
+Searched 1 files and found 1 matches in 0.00s. <span id="publishQuery"></span>
+ class trueBaseThemeSearchResultsHeader
+
+# What are all the entries in NewtonDB?
+
+
+table  DeLiM 
+ title DeLiM titleLink
+ wave theory of light  DeLiM /rows/young.html
+
+Results as JSON, CSV, TSV or Tree
+ link /search.json?q=title%20What%20are%20all%20the%20entries%20in%20NewtonDB%3F JSON
+ link /search.csv?q=title%20What%20are%20all%20the%20entries%20in%20NewtonDB%3F CSV
+ link /search.tsv?q=title%20What%20are%20all%20the%20entries%20in%20NewtonDB%3F TSV
+ link /search.tree?q=title%20What%20are%20all%20the%20entries%20in%20NewtonDB%3F Tree
+
+<script>document.addEventListener("DOMContentLoaded", () => TrueBaseBrowserApp.getApp().render().renderSearchPage())</script>
+
+import footer.scroll
