@@ -1,8 +1,9 @@
 trueBaseId newtondb
 siteName NewtonDB
 siteDomain newtondb.com
-grammarFolder ./grammar
-thingsFolder ./things
+grammarFolder ./columns
+queriesFolder ./queries
+thingsFolder ./rows
 ignoreFolder ./ignore
 siteFolder ./site
 devPort 1921
